@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+:root {
+  --gold: #4f4029;
+  --creme: #bab299;
+  --yellow: #d9b95b;
+  --green: rgba(54, 179, 83, 0.5);
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+body, html {
+  height: 100vh;
+  width: 100vw;
+  padding:0;
+  margin:0;
+}
+body {
+  font-family: 'Bona Nova', serif;
+}
+p {
+   color: var(--gold);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.bg-wrapper {
+  height: 100vh;
+  width: 100ve;
+  background-image: url('https://pbs.twimg.com/media/DU_tpzPV4AAvGRr.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+   display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."; 
+}
+.cubes {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up-wrapper {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(211,210,216);
+background: radial-gradient(circle, rgba(211,210,216,0) 0%, rgba(54,48,54,1) 100%);
+}
+.pop-up {
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  background: var(--creme);
+  border: 5px ridge var(--gold);
+  border-radius: 5px;
+}
+.pop-up>p::first-letter {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#sprite {
+  height: 450px;
+  width: 200px;
+}
+.button-wrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+}
+#next-button {
+  outline: 0;
+  margin:0;
+  background: var(--gold);
+  color: var(--creme);
+  padding: 5px;
+  height: 40px;
+  min-width: 60px;
+  width: auto;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 15px;
+  text-transform: capitalize;
+}
+#spirit-sprites, #sprites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 50px;
+  border-radius: 50%;
+}
+#item-sprites {
+  height: 60px;
+  width: 60px;
+}
+#portal-sprites {
+  height: 80px;
+  width: 80px;
+}

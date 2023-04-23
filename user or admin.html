@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>User login or Admin</title>
+        <link rel="stylesheet" type="text/css" href="mainque.css">
+        <style>
+            .box{
+	max-width: 550px;
+	
+	text-align: center;
+    background: rgba(255,255,255,.3);
+    box-shadow: 0.5px 15px rgba(0,0,0,.5);
+    
+    padding: 50px;
+    margin-top: 100px;
+    margin-left: 30%;
+ 
+    
+}
+body{
+  
+    width:100%;
+    height:100%;
+    background-image: url("https://wallpaperaccess.com/full/1244640.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+button{
+    background-color: rgb(244, 64, 64);
+    color: black;
+    font-size:15px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+}
+h1{
+    font-size:30px;
+}
+        </style>
+        <script>
+            function user(){
+                    window.location.href="loginpg.php";
+            }
+            function admin(){
+                window.location.href="adminloginpg.php";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="box">
+            <h1><strong>WELCOME TO HAUNTED HOUSE</strong></h1>
+            <div>
+                
+                <button onclick="user()">User login</button>
+            </div>
+            <br>
+        <div>
+                <button onclick="admin()">Admin login</button>
+            </div>   
+            
+            
+        </div>
+    </body>
+</html>

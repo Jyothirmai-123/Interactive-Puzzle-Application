@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <center>
+     <h1>Sign Up</h1>
+     <p class="p">Please fill in this form to create an account.</p>
+    <hr>
+     <style>
+        h1{
+            color: aliceblue;
+        }
+        .p{
+            color: aliceblue;
+        }
+     input[type=text], input[type=password],input[type=email]{
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      
+    }
+    input[type=submit],input[type=reset]{
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+body{
+             width:100%;
+            height:100%;
+            background:url("https://img.freepik.com/free-vector/watercolor-halloween-background_52683-43698.jpg");
+
+            background-size: cover;
+            overflow: hidden;
+            
+}
+  </style>
+  </head>
+<body>
+  
+  <form method="post" action = "signuppg.php">
+    
+    <table cellspacing = 15 cellpadding="5">
+       
+        <tr><td>First Name</td><td><input name="n" type = "text" placeholder = "name" required/></td></tr>
+        <tr><td>Surname</td><td><input name="sn" type = "text" placeholder = "surname" required/></td></tr>
+        <tr><td>Email address</td><td><input name="em" type = "email" placeholder = "xyz@gmail.com" required/></td></tr>    
+        <tr><td>Password</td><td><input name="pwd" type = "password" password = "" required/></td></tr>
+              
+    </table>
+    <tr>
+       <input type = "submit" name="submit" value = "Sign Up"> &nbsp;
+       <input type = "reset">
+    </tr>
+        
+      </form>
+    
+      <p>By clicking Sign Up, you agree to our <a href="#" style="color:rgb(21, 21, 198)">Terms & Privacy</a> </p>
+        <p>Already have an account, u can <a href="loginpg.php" style="color:rgb(21, 21, 198)">login</a> here<p></p>
+      
+    </body>
+    </center>
+   
+  </html>
+  
+  

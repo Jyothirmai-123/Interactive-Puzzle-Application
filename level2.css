@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Skranji:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, rgb(91, 50, 94) 0%, rgb(76, 24, 74) 48%, rgb(31, 1, 39) 100%) 0% 0%/contain;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Mountains of Christmas", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3ad97c;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+           supported by Chrome, Edge, Opera and Firefox */
+}
+
+.button {
+  line-height: 0;
+  padding: 1rem;
+  cursor: pointer;
+  position: absolute;
+  background: #f0733b;
+  transition: 5s ease;
+  z-index: 2;
+  border-radius: 5px;
+  animation: jumping 4s infinite ease;
+}
+.button:active {
+  transform: scale(0.85);
+}
+
+@keyframes jumping {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+.hits {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  font-size: 3rem;
+  line-height: 0;
+  font-size: 3rem;
+  z-index: 99;
+}
+.hits .hits-val {
+  font-size: 3rem;
+}
+
+.scary-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.shutterstock.com/image-photo/scary-ghost-on-dark-background-260nw-2025647777.jpg");
+  background-size: 103%;
+  background-position: center;
+  display: none;
+  z-index: 999;
+}
+
+img {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 4;
+  transition: 0.2s ease;
+}
+img:hover {
+  transform: scale(0.85);
+}
+
+#moon {
+  height: 105px;
+  width: 105px;
+  background-color: #eee;
+  border-radius: 139px 131px 141px 131px;
+  top: 30%;
+  left: 50%;
+  z-index: 0;
+  transform: translateX(-50%) scale(2.1);
+  box-shadow: inset 0px 0px 0px 0px rgba(54, 50, 50, 0.75), 0px 0px 56px rgba(255, 255, 255, 0.75);
+  position: absolute;
+  display: inline-block;
+}
+#moon li {
+  position: absolute;
+  list-style: none;
+  background: #b9dad7;
+  border-radius: 50%;
+}
+#moon li:nth-child(1) {
+  top: 1.15em;
+  left: 1.25em;
+  height: 0.75em;
+  width: 0.75em;
+}
+#moon li:nth-child(2) {
+  top: 1.05em;
+  left: 3.5em;
+  height: 1.25em;
+  width: 1.25em;
+}
+#moon li:nth-child(3) {
+  top: 2.95em;
+  left: 1.1em;
+  height: 1.75em;
+  width: 1.75em;
+}
+#moon li:nth-child(4) {
+  top: 3em;
+  left: 3.25em;
+  height: 0.5em;
+  width: 0.5em;
+}
+
+#stars {
+  width: 2px;
+  height: 2px;
+  
+  background: transparent;
+  border-radius: 100%;
+  animation: blink 5s infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#stars2 {
+  width: 3px;
+  height: 3px;
+  
+  background: transparent;
+  border-radius: 100%;
+  animation: blink 10s infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#stars3 {
+  width: 4px;
+  height: 4px;
+ 
+  background: transparent;
+  border-radius: 100%;
+  animation: blink 5s infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.modal {
+  height: 100vh;
+  width: 100%;
+  background: rgb(28, 11, 11);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 9999;
+}
+.modal p {
+  width: 50vw;
+}
+.modal .btn {
+  color: #fff;
+  padding: 10px 15px;
+  border: 1px solid white;
+  margin: 15px;
+  cursor: pointer;
+}

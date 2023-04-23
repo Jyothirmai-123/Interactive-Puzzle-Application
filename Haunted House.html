@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Treasure Hunt</title>
+        
+        <link rel="stylesheet" type="text/css" href="mainque.css">
+        <script>
+var level = 1;
+
+function goToLevel1() {
+    // Redirect to Level 1 page
+    window.location.href = "level1_hiddenobj.html";
+}
+
+function buttonClicked() {
+    if (level === 1) {
+        // Redirect to Level 1 page
+        goToLevel1();
+    } 
+}
+localStorage.setItem("current",500);
+    </script>
+    
+       
+    
+    </head>
+    <body>
+        
+        
+            
+            <div class="container">
+                <h2>Answer this to find out the treasure!</h2>
+                <h1><strong>I am not alive, but I can grow. I don't have lungs, but I need air to survive. <br>Guess what am I?</strong></h1>
+
+                <div class="question">
+                    <input type="text" id="answer">
+                    <button onclick="checkAnswer()">Check</button>
+                    <button onclick="buttonClicked()">Get Clue1</button>
+                    
+                </div>
+                <div id="result"></div>
+            </div>
+       
+            <script src="mainque.js"></script>
+        
+
+
+    </body>
+</html>
+
+
+
+
+	
+

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Treasure Hunt</title>
+        
+        <link rel="stylesheet" type="text/css" href="mainque.css">
+        <script>
+var level = 3;
+
+function goToLevel3() {
+    // Redirect to Level 1 page
+    window.location.href = "level3_ques.html";
+}
+
+function buttonClicked() {
+    if (level === 3) {
+        // Redirect to Level 1 page
+        goToLevel3();
+    } 
+}
+function showtext(){
+        var div = document.getElementById("hints");
+        div.innerHTML=" <strong><p style ='font-weight:15px;text-decoration:underline;'>Here are your hints</p></strong><ol><li>This is a phenomenon that occurs when a substance reacts with oxygen and releases heat and light.</li><li>It can be dangerous and destructive if not properly controlled.</li></ol></ol>";
+        div.style.display="block";
+    }
+    localStorage.setItem("current",400);
+    </script>
+    </head>
+    <body>
+        
+        
+            
+            <div class="container1">
+                <h1><strong>I am not alive, but I can grow. I don't have lungs, but I need air to survive. <br>Guess what am I?</strong></h1>
+
+                <div class="question">
+                    <input type="text" id="answer">
+                    <button onclick="checkAnswer()">Check</button>
+                    <button onclick="buttonClicked()">Get Clue3</button>
+                    <button onclick ="showtext()">Hints</button>
+                </div>
+                <div id="result"></div>
+            </div>
+            <div class="hints" id="hints"></div>
+            <script src="mainque.js"></script>
+        
+
+
+    </body>
+</html>
+
+
+
+
+	
+
