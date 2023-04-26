@@ -19,11 +19,6 @@ let backs = [
     "https://assets.codepen.io/1651485/hello4.png",
     "https://assets.codepen.io/1651485/hello5.png"
 ];
-var hints = [
-    "Look for hidden paths",
-    "Use the double jump to reach high places",
-    "Remember to save your progress often"
-  ];
   
   // Function to display the hint for the current level
   
@@ -50,7 +45,7 @@ btn.addEventListener("click", () => {
         }
     }
 
-    if (counter == 7) {
+    if (counter == 8) {
         alert("Boo!!! You lost as you didn't hit 10 times");
         alert("Hint2:   It can be dangerous and destructive if not properly controlled.")
         
