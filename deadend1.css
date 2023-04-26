@@ -4,7 +4,11 @@
     padding: 0;
 }
 body {
-    background: #eee;
+    width:100%;
+    height:100%;
+    background:url("https://img.freepik.com/free-photo/soft-vintage-gradient-blur-background-with-pastel-colored-well-use-as-studio-room-product-presentation-banner_1258-71578.jpg");
+    background-size: cover;
+    overflow: hidden;
 }
 .container .top_info {
     width: 80%;
