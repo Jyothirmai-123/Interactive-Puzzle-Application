@@ -25,7 +25,7 @@ function displayHint(level) {
   var hintIndex = level - 1; // Array index starts from 0
   var hint = hints[hintIndex];
   if (hint) {
-    alert("Hint: " + hint);
+    alert("Hint3: " + hint);
     	window.location.href = "HH3.html";
     
    
