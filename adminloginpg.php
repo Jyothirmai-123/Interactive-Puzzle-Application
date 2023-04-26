@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
         session_start();
         ?>
   <html>
@@ -51,7 +51,7 @@ body{
         <form method ='POST'>
             <center>
                
-        <h1>Welcome to login page</h1>
+        <h1>Admin login</h1>
         
             <div class="log">
             <table cellspacing="10">
@@ -82,13 +82,15 @@ body{
                 $pwd = $_POST['pwd'];
                 
                 if($email=="jyothirmaiv@gmail.com" and $pwd="jyo@26"){
-                        header("Location:adminpg.html");   
+                        header("Location:adminpg.html"); 
+                        ob_end_flush();
+                        
                        
                     }
                    
                 else{
                        ?>
-                        <script>alert("sorry ,user credentials didn't match")</script> <?php
+                        <script>alert("sorry ,admin credentials didn't match")</script> <?php
                         
                         
                     }
