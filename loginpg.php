@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
         session_start();
         ?>
   <html>
@@ -79,7 +79,7 @@ body{
             
             if(isset($_POST['submit']))
             {  
-                 //session_start();
+                 
                 $email = $_POST['email'];
                 $pwd = $_POST['pwd'];
                 
@@ -101,19 +101,19 @@ $name = $row['name'];
 $_SESSION['name']=$name;
 
                         echo "congrats, login successful";
-                        //if ($conn->query($users) === TRUE) {
-                        header("Location:storypg.html");   
-                        //} 
+                        
+                        header("Location:storypg.html"); 
+                        ob_end_flush();
+                       
                     }
                 }   
                 else{
                        ?>
                         <script>alert("sorry ,user credentials didn't match")</script> <?php
-                        /*header("Location:FBSignUp.html");*/
                         
                     }
             }
-            //$_SESSION['email']=$email;
+           
             ?>
             </div>
         
