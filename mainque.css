@@ -24,6 +24,19 @@
  
     
 }
+.logout{
+  background-color: #E21818;
+  color:black;
+  padding: 14px 20px;
+    margin: 8px 0;
+  border: none;
+  width: 20%;
+  text-decoration: none;
+  position:relative;
+  right:-10%;
+  font-size:16px;
+  
+}
 
 .question {
 	margin-top: 50px;
@@ -72,6 +85,7 @@ body{
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
+    font-size:15px;
     cursor: pointer;
     width: 20%;
     opacity: 0.9;
