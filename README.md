@@ -89,4 +89,4 @@ The user's soft skills are evaluated based on their performance in the game. Pro
 
 
 # Authors
-@Jyothirmai Vanaparthi Connect me..Here
+[Jyothirmai Vanaparthi](https://github.com/Jyothirmai-123) Connect me..Here
