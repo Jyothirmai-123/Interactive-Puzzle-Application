@@ -1,4 +1,6 @@
 # The Puzzle Application - Treasure Hunt
+https://treasurehunt-puzzle.000webhostapp.com/
+
 It is a virtual game where the player need to find the treasure which is in the haunted house by collecting hints if needed.
 This project aims to create an engaging and interactive online puzzle, designed to assess the soft skills of its users. Through subtle tasks and challenges woven into the puzzle, the user's soft skills will be evaluated. The goal is to provide an effective tool for evaluating these critical skills, while also providing a fun and entertaining user experience.
 ![Screenshot (5)](https://user-images.githubusercontent.com/113755812/235368612-49bbb0d3-e69d-4da2-be17-e39c0f92a006.png)
