@@ -1,5 +1,5 @@
 # The Puzzle Application - Treasure Hunt
-https://treasurehunt-puzzle.000webhostapp.com/
+Deployed link: https://treasurehunt-puzzle.000webhostapp.com/
 
 It is a virtual game where the player need to find the treasure which is in the haunted house by collecting hints if needed.
 This project aims to create an engaging and interactive online puzzle, designed to assess the soft skills of its users. Through subtle tasks and challenges woven into the puzzle, the user's soft skills will be evaluated. The goal is to provide an effective tool for evaluating these critical skills, while also providing a fun and entertaining user experience.
@@ -15,6 +15,8 @@ The user's soft skills, such as perseverance, presence of mind, time management,
 #### Client: HTML, CSS, Javascript
 
 #### Server: PHP
+
+#### Database: MySQL
 
 The client-side of the application is built using HTML,CSS and JavaScript components for building responsive, mobile-first web application along with JavaScript that's a versatile programming language used to create interactive and dynamic web pages.
 
