@@ -91,6 +91,14 @@ The user's soft skills are evaluated based on their performance in the game. Pro
 
 ![Screenshot (49)](https://user-images.githubusercontent.com/113755812/235469525-1689647a-9cf2-4d69-9c77-c4ba314c33e4.png)
 
+## Note: Running MySQL and Apache using XAMPP
+#### Steps to be followed
+1.Install XAMPP to manage Apache and MySQL.    
+2.Open the XAMPP Control Panel.     
+3.Start both the Apache and MySQL modules.    
+4.Ensure that both the modules are running on their respective ports without any errors.            
+5.Change the url address to "http://localhost/foldername/" after clicking on Apache admin and then run the required files.         
+6.By clicking on MySQL admin, you can create the database and required tables.   
 
 # Authors
 [Jyothirmai Vanaparthi](https://github.com/Jyothirmai-123) Connect me..Here
